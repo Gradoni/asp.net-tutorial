@@ -1,0 +1,73 @@
+{
+  "format": 1,
+  "restore": {
+    "/home/ml-station/Documents/c_hashtag/little/AspNetCoreTodo/AspNetCoreTodo/AspNetCoreTodo.csproj": {}
+  },
+  "projects": {
+    "/home/ml-station/Documents/c_hashtag/little/AspNetCoreTodo/AspNetCoreTodo/AspNetCoreTodo.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/ml-station/Documents/c_hashtag/little/AspNetCoreTodo/AspNetCoreTodo/AspNetCoreTodo.csproj",
+        "projectName": "AspNetCoreTodo",
+        "projectPath": "/home/ml-station/Documents/c_hashtag/little/AspNetCoreTodo/AspNetCoreTodo/AspNetCoreTodo.csproj",
+        "packagesPath": "/home/ml-station/.nuget/packages/",
+        "outputPath": "/home/ml-station/Documents/c_hashtag/little/AspNetCoreTodo/AspNetCoreTodo/obj/",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "/usr/share/dotnet/sdk/NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "/home/ml-station/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.2"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.2": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.2": {
+          "dependencies": {
+            "Microsoft.AspNetCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            },
+            "Microsoft.AspNetCore.Razor.Design": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Sqlite": {
+              "target": "Package",
+              "version": "[2.2.4, )"
+            },
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    }
+  }
+}
