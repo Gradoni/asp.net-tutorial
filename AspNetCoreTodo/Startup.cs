@@ -13,6 +13,7 @@ using Microsoft.EntityFrameworkCore;
 using AspNetCoreTodo.Data;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using AspNetCoreTodo.Services;
 
 namespace AspNetCoreTodo
 {
@@ -41,6 +42,8 @@ namespace AspNetCoreTodo
             services.AddDefaultIdentity<IdentityUser>()
                 .AddDefaultUI(UIFramework.Bootstrap4)
                 .AddEntityFrameworkStores<ApplicationDbContext>();
+
+            services.AddScoped<ITodoItemService, TodoItemService>();
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
         }

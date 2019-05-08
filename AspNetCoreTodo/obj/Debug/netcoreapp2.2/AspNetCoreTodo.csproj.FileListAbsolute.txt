@@ -31,3 +31,4 @@
 /home/ml-station/Documents/c_hashtag/little/AspNetCoreTodo/AspNetCoreTodo/obj/Debug/netcoreapp2.2/AspNetCoreTodo.dll
 /home/ml-station/Documents/c_hashtag/little/AspNetCoreTodo/AspNetCoreTodo/obj/Debug/netcoreapp2.2/AspNetCoreTodo.pdb
 /home/ml-station/Documents/c_hashtag/little/AspNetCoreTodo/AspNetCoreTodo/obj/Debug/netcoreapp2.2/AspNetCoreTodo.csproj.CopyComplete
+/home/ml-station/Documents/c_hashtag/little/AspNetCoreTodo/AspNetCoreTodo/obj/Debug/netcoreapp2.2/Razor/Views/Todo/Index.g.cshtml.cs

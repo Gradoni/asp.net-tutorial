@@ -12,13 +12,13 @@ namespace AspNetCoreTodo.Services
             var item1 = new TodoItem
             {
                 Title = "Learn ASP.NET Core",
-                DueAt = DateTimeOffset.NowAddDays(1)
+                DueAt = DateTimeOffset.Now.AddDays(1)
             };
             
             var item2 = new TodoItem
             {
                 Title = "Build awesome apps",
-                DueAt = DateTimeOffset.NowAddDays(2)
+                DueAt = DateTimeOffset.Now.AddDays(2)
             };
 
             return Task.FromResult(new[] {item1, item2});
