@@ -2,12 +2,14 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using AspNetCoreTodo.Services;
 using AspNetCoreTodo.Models;
 
 namespace AspNetCoreTodo.Controllers
-{
+{   
+    [Authorize]
     public class TodoController : Controller
     {
         private readonly ITodoItemService _todoItemService;
@@ -38,6 +40,23 @@ namespace AspNetCoreTodo.Controllers
             {
                 return BadRequest("Could not add item");
             }
+            return RedirectToAction("Index");
+        }
+
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> MarkDone(Guid id)
+        {
+            if (id == Guid.Empty)
+            {
+                return RedirectToAction("Index");
+            }
+
+            var successful = await _todoItemService.MarkDoneAsync(id);
+            if (!successful)
+            {
+                return BadRequest("Could not mark item as done");
+            }
+
             return RedirectToAction("Index");
         }
     }
